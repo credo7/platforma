@@ -1,0 +1,195 @@
+{
+  "navbar": {
+    "tournaments": "Tournaments",
+    "my_tournament": "My Tournament",
+    "ratings": "Ratings",
+    "shop": "Shop",
+    "games": "Games",
+    "my_profile": "My profile",
+    "my_team": "My team",
+    "subscription": "Subscription",
+    "faq": "FAQ",
+    "settings": "Settings",
+    "exit": "Exit Account",
+    "login": "Login",
+    "register": "Registration"
+  },
+  "balance": {
+    "balance": "Account balance",
+    "code": "Transaction code",
+    "date": "Date",
+    "amount": "Amount of payment",
+    "source": "Source",
+    "ezpoints": "ezpoints available",
+    "ingame": "In game"
+  },
+  "common": {
+    "players": "Players",
+    "teams": "Teams",
+    "teamName": "Team Name",
+    "playerName": "Player's name",
+    "rating": "Rating",
+    "wins": "Wins",
+    "loss": "Losses",
+    "search": "Search...",
+    "invite": "Invite",
+
+    "save": "Save",
+    "cancel": "Cancel",
+
+    "name": "Name",
+    "nickname": "Nickname",
+    "aboutSelf": "About",
+    "newEmail": "New Email",
+    "repeatEmail": "Repeat Email",
+    "changeEmail": "Change Email",
+    "changeLang": "Change Language",
+    "password": "Password",
+    "oldPassword": "Old Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "changePassword": "Change Password",
+
+    "change": "Change",
+    "or": "or",
+    "joinTeam": "join team",
+    "join": "Join",
+    "delete": "Delete",
+    "inTeam": "You are in team",
+
+    "accept": "Accept",
+    "decline": "Decline",
+
+    "leave": "Leave",
+
+    "dateCreate": "Date of team creation",
+    "dateRegister": "Date of registration",
+    "aboutTeam": "About Team",
+    "desc": "Description",
+    "player": "Player",
+    "team": "Team",
+    "winner": "Winner",
+    "prizePool": "Prize pool",
+    "participants": "Participants",
+    "participate": "Participate",
+    "leaveTournament": "Leave",
+    "readyTournament": "Ready",
+    "tournamentStarts": "Date of the tournament",
+    "place": "Place",
+    "details": "More details",
+    "history": "History",
+    "aboutTournament": "About Tournament",
+    "rules": "Rules",
+    "confirmSelection": "Confirm selection",
+    "pickPlayers": "Pick players",
+    "tournament": "Tournament",
+    "teamReady": "Ready",
+
+    "current": "Current",
+    "future": "Future",
+    "past": "Past",
+
+    "prizes": "Prizes",
+    "bracket": "Bracket",
+    "info": "Information",
+
+    "teamControl": "Team Control",
+    "teamRequests": "Team Requests",
+    "teamDeleted": "Team Deleted"
+  },
+
+  "createTeam": {
+    "name": "Name",
+    "logo": "Image",
+    "logoView": "View",
+    "about": "About Team",
+    "create": "Create",
+    "update": "Update",
+    "edit": "Edit"
+  },
+
+  "tournaments": {
+    "participate": "Participate",
+    "leave": "Leave"
+  },
+
+  "twoFA": {
+    "twoFa": "Two-Factor authentication",
+    "enabled": "enabled",
+    "enable": "Turn on",
+    "disabled": "disabled",
+    "disable": "Turn off",
+    "done": "Done",
+
+    "GA": "Google Authenticator",
+
+    "backupTitle": "Active backup codes",
+    "backupDesc": "These one-time codes allow you to sign in if you haven't got access to the phone",
+    "backupView": "View codes",
+    "backupSave": "Save these backup codes in a safe place",
+    "backupOnce": "Each backup code can only be used once",
+    "getNewCodes": "Get new codes",
+
+    "toUse": "You need to download Google Authenticator in order to use 2FA",
+
+    "enterCode": "Enter the 6-digit code that you see in the app",
+    "checkCode": "Validate",
+
+    "dialog": {
+      "title": "Get codes from",
+      "from": "from",
+      "choose": "Choose",
+      "setupAccount": "Set up account",
+      "intheapp": "in the app",
+      "scan": "Scan QRCode",
+      "failed": "Failed to scan?",
+      "next": "Next",
+      "back": "Back"
+
+    },
+
+    "instructions": {
+      "title": "2FA activation instructions",
+      "goTo": "Go to",
+      "or": "or",
+      "download": "Download and install Google Authenticator",
+      "choose": "Select",
+      "complete": "and follow the step by step instructions"
+    },
+
+    "setupCompleted": {
+      "1": "Configuration completed",
+      "2": "From now on you need to use",
+      "3": "Google Authenticator to log into your account",
+      "4": ""
+    }
+  },
+
+  "settings": {
+    "settings": "Settings",
+    "profile": "Profile",
+    "socials": "Social networks",
+    "team": "Team",
+    "authentication": "Two Factor Authentication"
+  },
+
+  "email_confirm": {
+    "title": "Verification code",
+    "description": "Check email for verification code",
+    "send": "Send",
+    "resend": "Resend Code"
+  },
+
+  "tiePage": {
+    "verifyEmail": "Verify Email",
+    "verifyBrawl": "Link Brawl Stars Account",
+    "save": "Save",
+
+    "toView": {
+      "title": "To view the game ID, you must:",
+      "1": "Launch the application Brawl Stars",
+      "2": "On the main screen of the game in the upper left corner, click on the «avatar»",
+      "3": "The characters after the # is your ID"
+    }
+  }
+}

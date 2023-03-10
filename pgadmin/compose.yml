@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  pgadmin:
+    container_name: pgp2_pgadmin_${CONFIG_ENV}_${NODE_ENV}
+    image: dpage/pgadmin4
+    env_file: .env
+    environment:
+      PGADMIN_LISTEN_PORT: ${PGADMIN_PORT}
+      PGADMIN_CONFIG_SERVER_MODE: "True"
+    volumes:
+      - ./data/pgadmin:/var/lib/pgadmin
+      - ./servers.json:/pgadmin4/servers.json
+    ports:
+      - ${EXPOSE_PGADMIN_PORT}:${PGADMIN_PORT}
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 1G
+
+networks:
+  default:
+    external:
+      name: pgp

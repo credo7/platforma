@@ -1,0 +1,272 @@
+@import "../../styles/variables";
+
+.GameHistoryCard {
+  display: flex;
+  justify-content: space-between;
+
+  width: 341px;
+  min-height: 88px;
+  background: #332e59;
+  box-shadow: 0px 5px 5px 5px #1a203f;
+  border-radius: 20px;
+
+  /*   padding: 11px 13px 11px 17px; */
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.GameHistoryCard__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 17px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  h2 {
+    display: flex;
+    position: relative;
+    min-height: 28px;
+  }
+}
+
+.GameHistoryCard__infoBlock {
+  display: flex;
+  // margin-top: 7px;
+}
+
+.GameHistoryCard__infoBlock__prize {
+  margin-top: 7px;
+}
+
+.GameHistoryCard__infoBlock__party {
+  margin-top: 7px;
+  padding-left: 10px;
+}
+
+.GameHistoryCard__dateAndBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 17px;
+  margin-top: 14px;
+  margin-bottom: 11px;
+  .Text-9px-400 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4px;
+  }
+}
+
+.GameHistoryCard__infoBlock__teamFormat {
+  font-family: MontserratBold;
+  font-size: 12px;
+  width: 47px;
+  color: #f3a939;
+}
+
+.GameHistoryCard__info__edit {
+  position: absolute;
+  right: -11px;
+  top: -5px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.gameIconAndTextWrap {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.GameHistoryCard__info_text {
+  font-family: MontserratBold;
+  font-size: 16px;
+  margin: 0;
+  border: none;
+}
+
+.GameHistoryCard__info_gameIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.dateAndBtnWrap {
+  @extend %flexCenter;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.dateAndBtn_data {
+  margin-right: 4px;
+}
+
+.GameHistoryCard__Status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  // margin-top: 10px;
+  // margin-left: 5px;
+}
+
+.statusUPCOMING {
+  background-color: rgb(201, 67, 67);
+}
+
+.statusREGISTRATION {
+  background-color: rgb(54, 160, 59);
+}
+/* --------------------------------------------------- Ipads (portrait)------------------- */
+// @media (min-width: 768px) {
+//   .GameHistoryCard {
+//     width: 690px;
+//     min-height: 55px;
+//   }
+
+//   .gameIconAndTextWrap {
+//     align-items: center;
+//     max-width: 159px;
+//     h2 {
+//       margin-block-start: 0;
+//       margin-block-end: 0;
+//       margin-inline-start: 0;
+//       margin-inline-end: 0;
+//     }
+//     padding: 5px 0;
+//   }
+
+//   .GameHistoryCard__info {
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     min-width: 355px;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//   }
+
+//   .GameHistoryCard__infoBlock {
+//     justify-content: space-between;
+//     margin-top: 0;
+//     align-items: center;
+//     width: 200px;
+//   }
+
+//   .GameHistoryCard__infoBlock__prize {
+//     margin-top: 0;
+//     min-width: 100px;
+//     .Text-16px-700 {
+//       font-size: 16px;
+//     }
+//     text-align: center;
+//   }
+
+//   .GameHistoryCard__infoBlock__teamFormat {
+//     margin: 0;
+//   }
+
+//   .GameHistoryCard__infoBlock__party {
+//     margin-top: 0;
+//     padding-left: 0;
+//     .Text-16px-700 {
+//       font-size: 16px;
+//     }
+//   }
+
+//   .GameHistoryCard__infoBlock__teamFormat {
+//     font-size: 16px;
+//   }
+
+//   .GameHistoryCard__dateAndBtn {
+//     flex-direction: row;
+//     align-items: center;
+//     min-width: 230px;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//     .Text-9px-400 {
+//       margin-top: 0;
+//     }
+//   }
+
+//   .dateAndBtnWrap {
+//     font-size: 16px;
+//     margin-right: 14px;
+//     background-color: #403a71;
+//     width: 160px;
+//     height: 100%;
+//   }
+
+// }
+/* --------------------------------------------------- КОНЕЦ Ipads (portrait)------------------- */
+
+/* --------------------------------------------------- Laptops -------------------------------------- */
+// @media (min-width: 1024px) {
+//   .GameHistoryCard {
+//     width: 760px;
+//     min-height: 60px;
+//   }
+
+//   .GameHistoryCard__info {
+//     min-width: 412px;
+//   }
+
+//   .GameHistoryCard__infoBlock {
+//     width: 220px;
+//   }
+
+//   .gameIconAndTextWrap {
+//     max-width: 180px;
+//   }
+
+//   .GameHistoryCard__dateAndBtn {
+//     min-width: 277px;
+//   }
+// }
+/* --------------------------------------------------- КОНЕЦ Laptops -------------------------------- */
+
+/* --------------------------------------------------- Desktops  ------------------------------------ */
+// @media (min-width: 1281px) {
+//   .GameHistoryCard {
+//     width: 910px;
+//     min-height: 70px;
+//   }
+
+//   .GameHistoryCard__info {
+//     h2 {
+//       font-size: 20px;
+//     }
+//     min-width: 500px;
+//   }
+
+//   .GameHistoryCard__infoBlock {
+//     width: 240px;
+//   }
+
+//   .GameHistoryCard__infoBlock__prize {
+//     .Text-16px-700 {
+//       font-size: 20px;
+//     }
+//   }
+
+//   .GameHistoryCard__infoBlock__party {
+//     .Text-16px-700 {
+//       font-size: 20px;
+//     }
+//   }
+
+//   .GameHistoryCard__infoBlock__teamFormat {
+//     font-size: 20px;
+//   }
+
+//   .GameHistoryCard__dateAndBtn {
+//     min-width: 345px;
+//   }
+
+//   .dateAndBtnWrap {
+//     font-size: 18px;
+//     width: 175px;
+//   }
+// }
+
+/* --------------------------------------------------- КОНЕЦ Desktops  ------------------------------ */

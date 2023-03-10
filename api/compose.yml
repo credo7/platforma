@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  api:
+    container_name: pgp2_api_${CONFIG_ENV}_${NODE_ENV}
+    image: pgp2_api_${CONFIG_ENV}_${NODE_ENV}
+    build: ./
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+    tty: true
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:${EXPOSE_API_PORT}:${API_PORT}
+    volumes:
+      - node_modules:/api/node_modules
+      - ./src:/api/src
+      - ./package.json:/api/package.json
+      - ./ecosystem.json:/api/ecosystem.json
+      - ./yarn.lock:/api/yarn.lock
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 4G
+
+volumes:
+  node_modules:
+
+# networks:
+#   default:
+#     external:
+#       name: pgp

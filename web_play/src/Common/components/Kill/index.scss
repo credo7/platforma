@@ -1,0 +1,35 @@
+.NotPrizePlace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  background: #F24E61;
+  border-radius: 13px;
+
+  margin-left: 9px;
+}
+
+.FirstPlace {
+  @extend .NotPrizePlace;
+  background: linear-gradient(113.56deg, #FFE9BF -4.24%, #F3A939 46.07%, #FFDDA2 77.78%, #FFEFD8 100.74%);
+}
+
+.SecondPlace {
+  @extend .NotPrizePlace;
+  background: linear-gradient(113.56deg, #EDE7DA -4.24%, #A2A2A2 46.07%, #CDCDCD 77.78%, #C8C8C8 100.74%);
+}
+
+.ThirdPlace {
+  @extend .NotPrizePlace;
+  background: linear-gradient(113.56deg, #EEC8B3 -4.24%, #DE6E3E 46.07%, #F09C6C 69.58%, #EEC8B3 100.74%);
+}
+
+.PlaceNumber {
+  font-family: MontserratBold;
+  font-size: 20px;
+  line-height: 24px;
+}

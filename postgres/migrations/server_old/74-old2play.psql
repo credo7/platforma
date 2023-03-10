@@ -1,0 +1,75 @@
+SET client_min_messages TO WARNING;
+
+TRUNCATE play.games CASCADE;
+TRUNCATE play.users CASCADE;
+TRUNCATE play."chatMessages" CASCADE;
+TRUNCATE play."chatRosters" CASCADE;
+TRUNCATE play."chatRooms" CASCADE;
+
+SET client_min_messages TO LOG;
+
+SELECT disable_triggers(true,'play');
+SELECT disable_triggers(true,'old');
+
+DO $$
+DECLARE 
+    r record;
+    columns text;
+    counts integer;
+BEGIN
+    FOR r IN (
+        SELECT table_name FROM information_schema.tables
+            WHERE table_type = 'BASE TABLE' 
+            AND table_schema = 'play'
+            AND table_name IN (
+                SELECT table_name 
+                    FROM information_schema.tables 
+                WHERE table_type = 'FOREIGN' 
+                    AND table_schema = 'old')
+    )
+    LOOP
+        columns := '*';
+
+        RAISE NOTICE '%', quote_ident(r.table_name);
+
+        IF r.table_name = 'users' THEN
+            columns := '
+                    "id", "username", "email", "image", "language", 
+                    "vbalance", "createdAt", "updatedAt", "blockChat", 
+                    "rotate", "online", "gameId" 
+                ';
+
+            EXECUTE '
+                INSERT INTO play.users 
+                    SELECT ' || columns || ' FROM old.users
+            ';
+        END IF;
+
+        IF r.table_name = 'users' THEN
+            -- ДОБАВИТЬ СКРИПТ ПЕРЕНОСА ТАБЛИЦЫ 'tournaments'
+        END IF;
+
+        IF r.table_name <> 'users' 
+			AND r.table_name <> 'tournaments' 
+			AND r.table_name <> 'tournamentsPartners' 
+			AND r.table_name <> 'notificationsTournaments' 
+			AND r.table_name <> 'tournamentsRounds'
+			AND r.table_name <> 'tournamentsMatches'
+			AND r.table_name <> 'tournamentsMatchesMaps'
+			AND r.table_name <> 'tournamentsRules'
+			AND r.table_name <> 'tournamentsPlayers'
+			AND r.table_name <> 'tournamentsPrizes'
+			AND r.table_name <> 'tournamentsTeams'
+			AND r.table_name <> 'tournamentsTeamsPlayers'
+			AND r.table_name <> 'tournamentsPrizes'
+		THEN
+            EXECUTE '
+                INSERT INTO play.' || quote_ident(r.table_name) || ' 
+                    SELECT ' || columns || ' FROM old.' || quote_ident(r.table_name) || '
+            ';
+        END IF;
+    END LOOP;
+END$$;
+
+SELECT disable_triggers(false,'play');
+SELECT disable_triggers(false,'old');

@@ -1,0 +1,23 @@
+.PlayersRating,
+.TeamsRating {
+  padding-top: 17px;
+  margin: 0 auto;
+}
+
+.PlayersRating__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PlayersRating__card__number {
+  font-family: MontserratBold;
+  font-size: 18px;
+  color: #6448b1;
+  margin-bottom: 17px;
+  margin-right: 5px;
+}
+
+.Rating__search_wrapper {
+  display: flex;
+}

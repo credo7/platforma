@@ -1,0 +1,92 @@
+.GameProfile {
+  background-color: #332E59;
+  display: flex;
+  flex-direction: column;
+}
+
+.GameProfile__btnAndStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.GameProfile__stat {
+  display: flex;
+  padding-top: 12px;
+}
+
+.GameProfile__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2c254a;
+}
+
+.GameProfile__main__header {
+  background-color: #332E59;
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.GameProfile__main__userMedia {
+  display: flex;
+  align-items: center;
+  padding-right: 17px;
+}
+
+.GameProfile__main__tabs {
+  list-style: none;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.GameProfile__main__tab--selected {
+  position: relative;
+  font-family: MontserratBold;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 12px 48px 13px 17px;
+  background-color: #2c254a;
+  border-top-right-radius: 18px;
+  box-shadow: inset -1px 2px 3px rgba(0, 0, 0, 0.1);
+  .RoundCornerWrapperBR {
+    opacity: 1;
+  }
+  .RoundCornerWrapperBL {
+    opacity: 1;
+  }
+}
+
+.GameProfile__main__content {
+  margin-top: 19px;
+  background-color: #2c254a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// .GameProfile__RoundCornerWrapperBR {
+//   width: 23px;
+//   height: 21px;
+//   position: absolute;
+//   box-sizing: border-box;
+//   right: -20px;
+//   top: 21px;
+//   background-color: #2c254a;
+//   border: none;
+// }
+
+// .GameProfile__RoundCornerBR {
+//   position: absolute;
+//   background-color: #332E59;
+//   left: 3px;
+//   width: 20px;
+//   height: 17px;
+//   border: none;
+//   box-sizing: border-box;
+//   border-bottom-left-radius: 18px;
+//   box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.1);
+// }

@@ -1,0 +1,40 @@
+.TeamProfilePage__teamPlayers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TeamProfilePage__title {
+  color: #4e7cff;
+  font-family: MontserratBold;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+
+.TeamProfilePage__commonBtn {
+  width: 115px;
+  margin-left: 0;
+  margin-top: 8px;
+}
+
+.Profile__wrapperImgAndUserinfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TeamProfilePage__rating {
+  font-size: 18px;
+  font-family: MontserratBold;
+  &::before {
+    content: url("../../../assets/svg/Profile/Rating.svg");
+    margin-right: 7px;
+  }
+}
+
+.TeamProfilePage__nameOwnerTeam {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 6px 0;
+  color: #6158a4;
+}

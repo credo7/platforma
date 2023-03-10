@@ -1,0 +1,100 @@
+.Social_Link_wrapper {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+}
+
+.Social_Link_text {
+  color: #fff;
+  font-family: MontserratBold;
+  font-size: 16px;
+}
+
+.Social_Link_sing {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Social__imgWrapper {
+  display: inline-block;
+  width: 32px;
+  height: 21px;
+}
+
+.Social_Link_icon_wrapper {
+  margin: 10px 10px 0 0;
+}
+
+.Social_Link_settingsLink {
+  cursor: pointer;
+  width: 145px;
+  height: 35px;
+  margin-top: 10px;
+  background: #4e7cff;
+  color: #fff;
+  border-radius: 15px;
+  font-family: MontserratBold;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.Social__text {
+  color: #fff;
+  font-family: MontserratRegular;
+  font-size: 16px;
+  margin: 20px 0;
+  width: 90%;
+}
+
+.Location__copy {
+  cursor: pointer;
+  width: 145px;
+  height: 35px;
+  margin-top: 5px;
+  background: #4e7cff;
+  color: #fff;
+  border-radius: 15px;
+  font-family: MontserratBold;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.Location__copy--copyed {
+  cursor: pointer;
+  width: 145px;
+  height: 35px;
+  margin-top: 5px;
+  background: #787c85;
+  color: #fff;
+  border-radius: 15px;
+  font-family: MontserratBold;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.Social_Link_sign--higherMarginBottom {
+  @extend .Social_Link_sing;
+  margin-bottom: 12px;
+}
+
+.Social__content--smollerMarginTop {
+  margin-top: -17px;
+}
+
+.socialImg {
+  cursor: pointer;
+}

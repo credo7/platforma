@@ -1,0 +1,16 @@
+.Settings__sign {
+  margin: 0 0 2px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  font-family: MontserratBold;
+}
+
+.Settings__sign--higherMarginBottom {
+  @extend .Settings__sign;
+  margin-bottom: 12px;
+}
+
+.Settings__content--smollerMarginTop {
+  margin-top: -17px;
+}

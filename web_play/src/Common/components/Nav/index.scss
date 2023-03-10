@@ -1,0 +1,212 @@
+@import "../../styles/variables";
+
+.Nav {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: nowrap;
+  background: #332e59;
+  height: 70px;
+  @extend %widthContainer;
+}
+
+.Nav__wrapper {
+  @extend %flexCenter;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #332e59;
+  z-index: 50;
+}
+
+#Nav__logo {
+  width: 72px;
+}
+
+#Nav__menu {
+  width: 29px;
+  cursor: pointer;
+}
+
+#Nav__rating {
+  margin-bottom: 4px;
+}
+
+.Nav__iconDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  height: 50px;
+  background-color: #2c254a;
+  border-radius: 15px;
+  margin: 15px;
+  overflow: hidden;
+}
+
+.Nav__icon {
+  @extend %flexCenter;
+  width: 31px;
+}
+
+.Nav__icon--inDiv {
+  @extend %flexCenter;
+  width: 74px;
+  height: 50px;
+  &.active {
+    background-color: #413a71;
+  }
+}
+
+.Nav__figure {
+  @extend %flexCenter;
+  position: relative;
+  height: 100%;
+}
+
+.Nav__userIcon {
+  margin: 0;
+}
+
+.Nav__userIcon__wrapper {
+  width: 40px;
+  height: 40px;
+}
+
+.navImage {
+  width: 33px;
+  height: 33px;
+}
+
+.navSvg {
+  overflow: visible;
+}
+
+.navSvg.active path {
+  fill: #4e7cff;
+  filter: drop-shadow(0px 0px 3px #4e7cff);
+}
+
+.Nav__figure__indicator {
+  @extend %flexCenter;
+  position: absolute;
+  min-width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  font-size: 12px;
+  background: #ff000f;
+  padding: 0 3px;
+  box-sizing: border-box;
+  top: -5px;
+  right: -5px;
+}
+
+.Nav__iconText {
+  display: none;
+  @extend %navFont;
+}
+
+.Nav__userInfoWrap {
+  display: none;
+  @extend %flexCenter;
+}
+
+.Nav__username {
+  @extend %navFont;
+}
+
+.Nav__messageWrap,
+.Nav__notifiWrap {
+  position: relative;
+}
+
+.Nav__notifiImg,
+.Nav__massageImg {
+  margin-left: 25px;
+  height: 27px;
+  width: 23px;
+}
+
+.Nav__massageImg {
+  margin-right: 25px;
+}
+
+.SidePanel__option__imgContainer__indicator {
+  left: 15px !important;
+  bottom: 12px !important;
+}
+
+.Nav__RegisterAndLoginWrap {
+  display: flex;
+}
+
+.Nav__RegisterText,
+.Nav__LoginText {
+  display: none;
+}
+
+.Nav__RegisterWrap,
+.Nav__LoginWrap {
+  @extend %flexCenter;
+  @extend %navFont;
+}
+
+.Nav__RegisterWrap {
+  margin-right: 15px;
+}
+
+.Nav__RegisterImg,
+.Nav__LoginImg {
+  margin-right: 10px;
+}
+
+.FaqHide {
+  display: none;
+}
+
+/* --------------------------------------------------- Ipads (portrait)------------------- */
+// @media (min-width: 768px) {
+//   .Nav__userInfoWrap {
+//     display: flex;
+//     margin-left: 25px;
+//   }
+
+//   .Nav__RegisterAndLoginWrap {
+//     display: flex;
+//   }
+
+//   .Nav__RegisterWrap,
+//   .Nav__LoginWrap {
+//     font-size: 12px;
+//   }
+
+//   .FaqHide {
+//     display: flex;
+//   }
+// }
+
+/* --------------------------------------------------- Laptops -------------------------------------- */
+// @media (min-width: 1024px) {
+//   .Nav__icon--inDiv {
+//     @extend %flexCenter;
+//     width: 71px;
+//     height: 50px;
+//     &.active {
+//       background-color: #2c254a;
+//       color: #4e7cff;
+//     }
+//   }
+
+//   .Nav__iconDiv {
+//     width: 826px;
+//   }
+
+//   .Nav__iconText {
+//     display: block;
+//   }
+
+//   #Nav__logo {
+//     margin-right: 25px;
+//   }
+// }

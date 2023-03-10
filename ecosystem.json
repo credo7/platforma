@@ -1,0 +1,36 @@
+{
+  "deploy": {
+    "prod": {
+      "user": "shawnext",
+      "host": [
+        {
+          "host": "power-games.pro",
+          "port": "22"
+        }
+      ],
+      "ref": "origin/main",
+      "repo": "git@github.com:PowerGroupCloud/pgp2.git",
+      "path": "/home/shawnext/pgp2",
+      "ssh_options": "ForwardAgent=yes",
+      "pre-setup": "ssh-keyscan -t rsa github.com > ~/.ssh/known_hosts && mkdir /home/shawnext/pgp2",
+      "pre-deploy": "yarn dc:down; git pull -r",
+      "post-deploy": "yarn dc:up"
+    },
+    "dev": {
+      "user": "shawnext",
+      "host": [
+        {
+          "host": "power-games.me",
+          "port": "22"
+        }
+      ],
+      "ref": "origin/main",
+      "repo": "git@github.com:PowerGroupCloud/pgp2.git",
+      "path": "/home/pwrg/pgp2",
+      "ssh_options": "ForwardAgent=yes",
+      "pre-setup": "ssh-keyscan -t rsa github.com > ~/.ssh/known_hosts && mkdir /home/pwrg/pgp2",
+      "pre-deploy": "yarn dc:down; git pull -r",
+      "post-deploy": "yarn dc:up"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.ReglamentTournament {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.ReglamentTournament__wrapTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.ReglamentTournament__title {
+}
+
+.ReglamentTournament__title_small {
+}
+
+.ReglamentTournament__wrapItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.ReglamentTournament__item {
+  font-size: 14px;
+  margin: 7px 0;
+}
+
+.ReglamentTournament__GoBack {
+  margin: 23px 0;
+  border: 2px solid #4e7cff;
+  border-radius: 15px;
+  width: 130px;
+  min-height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

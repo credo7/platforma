@@ -1,0 +1,96 @@
+{
+  "name": "web_auth",
+  "version": "2.0.0",
+  "private": true,
+  "author": "pwrg",
+  "license": "MIT",
+  "contributors": [
+    "Hero",
+    "Anton"
+  ],
+  "scripts": {
+    "start": "PORT=4200 npx react-app-rewired start",
+    "build": "npx react-app-rewired build",
+    "test": "npx react-app-rewired test",
+    "kill": "sudo kill -9 $(sudo lsof -t -i:4200)",
+    "pm2:run:production": "yarn build; npx pm2-runtime ecosystem.json --only prod",
+    "pm2:run:development": "npx pm2-runtime ecosystem.json --only dev",
+    "pm2:production": "yarn build; npx pm2 startOrRestart ecosystem.json --only prod",
+    "pm2:development": "npx pm2 startOrRestart ecosystem.json --only dev",
+    "pm2:logs": "npx pm2 logs",
+    "pm2:kill": "npx pm2 delete dev prod; npx pm2 flush"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.5",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "apollo-upload-client": "^16.0.0",
+    "classnames": "^2.2.6",
+    "crypto-js": "^4.0.0",
+    "customize-cra": "^1.0.0",
+    "formik": "^2.2.6",
+    "graphql": "^15.5.0",
+    "graphql-anywhere": "^4.2.7",
+    "graphql-fields-list": "^2.2.4",
+    "http-proxy-middleware": "^2.0.1",
+    "i18next": "^19.7.0",
+    "moment": "^2.25.3",
+    "nanoid": "^3.1.23",
+    "qs": "^6.10.1",
+    "react": "^17.0.1",
+    "react-cookie": "^4.0.3",
+    "react-countdown": "^2.3.2",
+    "react-dom": "^17.0.1",
+    "react-error-overlay": "^6.0.9",
+    "react-i18next": "^11.7.1",
+    "react-icons": "^4.2.0",
+    "react-native": "^0.66.4",
+    "react-native-elements": "^3.4.2",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-vector-icons": "^9.0.0",
+    "react-native-web": "^0.17.5",
+    "react-router-dom": "^6.1.1",
+    "react-scripts": "^4.0.3",
+    "react-timer-hook": "^3.0.5",
+    "react-toastify": "^6.1.0",
+    "react-yandex-metrika": "^2.6.0",
+    "subscriptions-transport-ws": "^0.9.19",
+    "web-vitals": "^2.1.0",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-proposal-class-properties": "^7.16.5",
+    "@babel/plugin-proposal-private-methods": "^7.16.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.5",
+    "@babel/plugin-syntax-jsx": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@testing-library/dom": ">=7.21.4",
+    "dotenv": "^10.0.0",
+    "pm2": "^5.1.2",
+    "prop-types": "^15.5.4",
+    "react-app-rewired": "^2.1.8",
+    "typescript": ">=2.8.0",
+    "yarn": "^1.22.17"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

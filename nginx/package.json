@@ -1,0 +1,11 @@
+{
+  "name": "nginx",
+  "version": "2.0.0",
+  "private": true,
+  "author": "PWRG",
+  "license": "MIT",
+  "contributors": [
+    "Hero",
+    "Anton"
+  ]
+}

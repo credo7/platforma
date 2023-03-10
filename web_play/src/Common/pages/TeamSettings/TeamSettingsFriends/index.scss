@@ -1,0 +1,13 @@
+#teamForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  * {
+    width: 300px;
+    margin: 5px 0;
+  }
+}
+
+.TeamSettings__input {
+  width: 300px;
+}

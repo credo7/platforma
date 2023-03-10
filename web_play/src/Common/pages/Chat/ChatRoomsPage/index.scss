@@ -1,0 +1,63 @@
+.Chats {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Chats__MainMessage {
+  margin: 20px auto;
+}
+
+.Chats__stripe {
+  z-index: 0;
+  width: 100%;
+  height: 68px;
+  position: absolute;
+  background: #332e59;
+}
+
+.Chats__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  max-width: 600px;
+  padding: 0 17px;
+}
+
+.Chats__search {
+  margin: 12px 0 8px;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  height: 36px;
+  background: #332e59;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+}
+
+.Chats__search__imgWrapper {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.Chats__search__input {
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.Chats__cardsWrapper {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+}
+
+.ChatsCard__info__nikAndMes__mes_wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

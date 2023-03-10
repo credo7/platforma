@@ -1,0 +1,43 @@
+.SearchInput {
+  height: 30px;
+  display: flex;
+  // justify-content: space-between;
+  padding-top: 5px;
+  box-sizing: border-box;
+  background: #332E59;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.SearchInput__figure {
+  display: flex;
+  margin: 0 7px 0 20px;
+  cursor: pointer;
+}
+
+.SearchInput__imgWrapper {
+  width: 15px;
+}
+
+.SearchInput__imgWrapper__text {
+  color: #4E7CFF;
+  font-size: 10px;
+  line-height: 12px;
+  font-family: MontserratLight;
+  padding-left: 6px;
+  margin: 2px 0 0 0;
+}
+
+.SearchInput__input {
+  border: none;
+  background: #332E59;
+  color: #fff;
+  height: 18px;
+  padding-left: 28px;
+  width: 100%;
+  &::placeholder  {
+    font-family: MontserratBold;
+    color: #fff;
+    opacity: 1;
+    font-size: 14px;
+  }
+}

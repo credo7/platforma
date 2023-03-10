@@ -1,0 +1,123 @@
+.CreateTournament {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CreateTournament__form {
+  // display: flex;
+  // flex-direction: column;
+  border-bottom: 1px solid #fff;
+}
+
+.CreateTournament__form__group {
+  margin-top: 10px;
+
+  label {
+    display: block;
+    margin: 0;
+  }
+}
+
+.CreateTournament__form__group--marginSmall {
+  margin-top: 5px;
+}
+
+.CreateTournament__label {
+  margin-top: -12px;
+  color: "#fff";
+}
+
+.CreateTournament__form__select {
+  padding-left: 15px;
+  width: 99px;
+  height: 46px;
+  border: 2px solid #4e7cff;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.CreateTournament__form__select--wide {
+  @extend .CreateTournament__form__select;
+  width: 258px;
+}
+
+.CreateTournament__topic {
+  margin-bottom: 6px;
+}
+
+.CreateTournament__form__textarea {
+  width: 258px;
+  height: 366px;
+  border: 2px solid #4e7cff;
+  background: #fff;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  resize: vertical;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-family: MontserratRegular;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+.CreateTournament__form__selectWrap {
+  position: relative;
+  display: flex;
+}
+
+.CreateTournament__form__selectIngWrap {
+  display: flex;
+  justify-content: center;
+  right: 0;
+  position: absolute;
+  width: 30px;
+  height: 46px;
+  background: #fff;
+  pointer-events: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 2px solid #4e7cff;
+  border-left: none;
+  box-sizing: border-box;
+}
+
+.CreateTournament__form__selectImg {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 13px;
+}
+
+.CreateTournament__form__btn {
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.massageToAdmin2FA {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.IconEdit__wrapper {
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+
+.readBtn {
+  /*  margin-top: 20px; */
+  background-color: red;
+}
+
+.prizes {
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+
+.CreateTournament__wrapperAdminAction {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}

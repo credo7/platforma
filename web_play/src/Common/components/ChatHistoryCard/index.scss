@@ -1,0 +1,78 @@
+.ChatHistoryCard {
+  display: flex;
+  max-width: 324px;
+  min-width: 293px;
+  height: 54px;
+  background: #332e59;
+  box-shadow: 0px 3px 5px 3px rgba(26, 32, 63, 0.8);
+  border-radius: 15px;
+  padding: 7px 14px 7px 9px;
+  box-sizing: border-box;
+  margin-top: 11px;
+  &:first-child {
+    margin-top: 9px;
+  }
+}
+
+.ChatHistoryCard__imgWrapper {
+  position: relative;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.ChatHistoryCard__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.ChatHistoryCard__info__nikAndMes {
+  overflow: hidden;
+}
+
+.ChatHistoryCard__info__nikAndMes__nik {
+  margin: 0;
+}
+
+.ChatHistoryCard__info__nikAndMes__mes {
+  margin: 0;
+  width: 200px;
+}
+
+.ChatHistoryCard__info__nikAndMes__mes_wrap {
+  display: flex;
+  line-height: "20px";
+  max-width: 30%;
+  justify-content: space-between;
+}
+
+.ProfileIcon {
+  margin-right: 10px;
+}
+
+.ChatHistoryCard__info__timeAndCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ChatHistoryCard__info__timeAndCoun__time {
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+.ChatHistoryCard__info__timeAndCoun__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  background: #4e7cff;
+  border-radius: 50%;
+}

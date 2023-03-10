@@ -1,0 +1,198 @@
+// Global
+.Wallets__wrapper,
+.Wallets__content,
+.WalletsTransactions__wrapper,
+.WalletsTransactions__content,
+.Wallets__form,
+.Wallets__balance,
+.WalletsTransactions__card,
+.WalletsTransactions__transaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Wallets__content {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+
+  background: #332e59;
+  border-radius: 15px;
+}
+
+.Wallets__header {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+.Wallets__button,
+.Wallets__button--disabled,
+.Wallets__button--error,
+.Wallets__button--warning {
+  text-align: center;
+
+  width: 200px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #4e7cff;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  font-family: MontserratBold;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(53, 117, 175, 0.2);
+}
+
+.Wallets__button--disabled {
+  background-color: gray;
+}
+
+.Wallets__button--error {
+  background-color: red;
+}
+
+.Wallets__button--warning {
+  background-color: rgb(156, 147, 60);
+}
+
+.Wallets__button__outline {
+  text-align: center;
+
+  width: 150px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  font-family: MontserratBold;
+  border: 1px solid #fff;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(53, 117, 175, 0.2);
+}
+
+.Wallets__button__small,
+.Wallets__button__small--error {
+  width: 70%;
+  background: #4e7cff;
+  color: #fff;
+  border-radius: 15px;
+
+  font-family: MontserratBold;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  padding: 5px;
+  margin: 5px;
+
+  cursor: pointer;
+}
+
+.Wallets__button__small--error {
+  background-color: red;
+}
+
+.Wallets__button__small--error .Wallets__text,
+.Wallets__text--red {
+  font-family: MontserratBold;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.Wallets__text--red {
+  color: red;
+}
+
+.Wallets__balance {
+  flex-direction: row;
+
+  width: 70%;
+}
+
+.Wallets__input,
+.Wallets__input--error {
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #4e7cff;
+  background: #fff;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 16px;
+  padding-left: 7px;
+}
+
+.Wallets__input--error {
+  border-color: red;
+}
+
+.WalletsTransactions__statuses {
+  margin: 5px;
+}
+
+.WalletsTransactions__wrapper {
+  width: 100%;
+}
+
+.WalletsTransactions__transaction {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.WalletsTransactions__transaction > * {
+  margin: 3px;
+}
+
+.WalletsTransactions__username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.WalletsTransactions__playername {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.WalletsTransactions__date {
+  font-style: italic;
+}
+
+.WalletsTransactions__card {
+  border: 1px solid #4e7cff;
+}
+
+.WalletsTransactions__card > * {
+  padding: 3px;
+}
+
+.WalletsTransactions__comment {
+  font-size: 12px;
+  text-align: center;
+}
+
+.WalletsTransactions__btn {
+  width: 120px;
+  height: 30px;
+}

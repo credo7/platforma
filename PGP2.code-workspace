@@ -1,0 +1,62 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "[javascriptreact]": {
+      // "editor.defaultFormatter": null,
+      // "editor.formatOnSave": true
+    },
+    "[dotenv]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[shellscript]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[dockerfile]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[ignore]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[properties]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "sqltools.connections": [
+      {
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 4132,
+        "driver": "PostgreSQL",
+        "name": "pgp2",
+        "database": "pgp2",
+        "username": "pgp2",
+        "password": "pgp2"
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "github.vscode-pull-request-github",
+      "apollographql.vscode-apollo",
+      "p1c2u.docker-compose",
+      "formulahendry.docker-explorer",
+      "esbenp.prettier-vscode",
+      "foxundermoon.shell-format",
+      "ms-ceintl.vscode-language-pack-ru",
+      "msjsdiag.vscode-react-native",
+      "redhat.vscode-yaml",
+      "mtxr.sqltools-driver-pg",
+      "mikestead.dotenv",
+      "aaron-bond.better-comments",
+      "eg2.vscode-npm-script",
+      "mtxr.sqltools",
+      "ms-azuretools.vscode-docker",
+      "alefragnani.Bookmarks"
+    ]
+  }
+}

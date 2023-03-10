@@ -1,0 +1,52 @@
+.UserRatingCard {
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  &.active {
+    z-index: 2;
+    opacity: 1;
+  }
+}
+
+.UserRatingCard__svgWrapper {
+  padding-left: 26px;
+}
+
+.UserRatingCard__svg {
+  position: absolute;
+  width: 220px;
+  height: 60px;
+  overflow: visible;
+  padding-top: 16px;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+.UserRatingCard__points {
+  fill: #4E7CFF;
+}
+
+.UserRatingCard__storke {
+  stroke:#4E7CFF;
+  stroke-width: 2;
+  filter: drop-shadow(0px 0px 3px #4E7CFF);
+}
+
+.UserRatingCard__text {
+  font-family: MontserratBold;
+  font-size: 12px;
+  line-height: 15px;
+  fill: #fff;
+  text-anchor: middle;
+}
+
+.UserRatingCard__point--red1 {
+  fill: #F24E61;
+}
+
+.UserRatingCard__point--green1 {
+  fill: #85C791;
+  filter: drop-shadow(0px 0px 2px rgba(214, 255, 128, 0.8));
+}

@@ -1,0 +1,35 @@
+.IconEdit {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.IconEdit__text {
+  font-size: 12px;
+  line-height: 15px;
+  color: #4e7cff;
+  font-family: MontserratMedium;
+  margin-top: 13px;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+
+.IconEdit__icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.IconEdit__input {
+  display: none;
+}
+
+.IconEdit__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.IconEdit__buttons > * {
+  padding: 0 10px;
+}

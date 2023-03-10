@@ -1,0 +1,196 @@
+@import "../../styles/variables";
+
+#NavBar__menu {
+  width: 29px;
+  cursor: pointer;
+}
+
+.NavBar__wrapper {
+  @extend %flexCenter;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.NavBar {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #332e59;
+  width: 100%;
+}
+
+.NavBar__iconDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #332e59;
+  border-radius: 15px;
+  border: #2c254a 3px solid;
+  margin: 2px 50px;
+  overflow: hidden;
+}
+
+.NavBar__icon {
+  @extend %flexCenter;
+  width: 31px;
+}
+
+.NavBar__icon--inDiv {
+  @extend %flexCenter;
+  width: 74px;
+  height: 30px;
+  &.active {
+    background-color: #413a71;
+  }
+}
+
+.NavBar__figure {
+  @extend %flexCenter;
+  position: relative;
+  height: 100%;
+}
+
+.NavBar__userIcon {
+  margin: 0;
+}
+
+.navImage {
+  width: 33px;
+  height: 33px;
+}
+
+.navSvg {
+  overflow: visible;
+}
+
+.navSvg.active path {
+  fill: #4e7cff;
+  filter: drop-shadow(0px 0px 3px #4e7cff);
+}
+
+.NavBar__figure__indicator {
+  @extend %flexCenter;
+  position: absolute;
+  min-width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  font-size: 12px;
+  background: #ff000f;
+  padding: 0 3px;
+  box-sizing: border-box;
+  top: -5px;
+  right: -5px;
+}
+
+.NavBar__iconText {
+  display: none;
+  @extend %navFont;
+}
+
+.NavBar__userInfoWrap {
+  display: none;
+  @extend %flexCenter;
+}
+
+.NavBar__username {
+  @extend %navFont;
+}
+
+.NavBar__messageWrap,
+.NavBar__notifiWrap {
+  position: relative;
+}
+
+.NavBar__notifiImg,
+.NavBar__massageImg {
+  margin-left: 25px;
+  height: 27px;
+  width: 23px;
+}
+
+.NavBar__massageImg {
+  margin-right: 25px;
+}
+
+.SidePanel__option__imgContainer__indicator {
+  left: 15px !important;
+  bottom: 12px !important;
+}
+
+.NavBar__RegisterAndLoginWrap {
+  display: flex;
+}
+
+.NavBar__RegisterText,
+.NavBar__LoginText {
+  display: none;
+}
+
+.NavBar__RegisterWrap,
+.NavBar__LoginWrap {
+  @extend %flexCenter;
+  @extend %navFont;
+}
+
+.NavBar__RegisterWrap {
+  margin-right: 15px;
+}
+
+.NavBar__RegisterImg,
+.NavBar__LoginImg {
+  margin-right: 10px;
+}
+
+.FaqHide {
+  display: none;
+}
+
+/* --------------------------------------------------- Ipads (portrait)------------------- */
+// @media (min-width: 768px) {
+//   .NavBar__userInfoWrap {
+//     display: flex;
+//     margin-left: 25px;
+//   }
+
+//   .NavBar__RegisterAndLoginWrap {
+//     display: flex;
+//   }
+
+//   .NavBar__RegisterWrap,
+//   .NavBar__LoginWrap {
+//     font-size: 12px;
+//   }
+
+//   .FaqHide {
+//     display: flex;
+//   }
+// }
+
+/* --------------------------------------------------- Laptops -------------------------------------- */
+// @media (min-width: 1024px) {
+//   .NavBar__icon--inDiv {
+//     @extend %flexCenter;
+//     width: 71px;
+//     height: 50px;
+//     &.active {
+//       background-color: #2c254a;
+//       color: #4e7cff;
+//     }
+//   }
+
+//   .NavBar__iconDiv {
+//     width: 826px;
+//   }
+
+//   .NavBar__iconText {
+//     display: block;
+//   }
+
+//   #NavBar__logo {
+//     margin-right: 25px;
+//   }
+// }

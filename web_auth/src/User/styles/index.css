@@ -1,0 +1,359 @@
+.Email__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Email__error {
+  color: red;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+.Email__text {
+  font-size: 13px;
+  line-height: 15px;
+  color: #d32e49;
+  font-family: MontserratMedium;
+  margin-top: 13px;
+  margin-bottom: 11px;
+  text-align: center;
+}
+.Settings__buttonGoBack {
+  align-self: center;
+  margin: 15px 0 100px 0;
+}
+
+.UserForm__forLogin--wider,
+.UserForm__forLogin--widerX2 {
+  width: 258px;
+  margin-bottom: 25px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.UserForm__forLogin--wider p,
+.UserForm__forLogin--widerX2 p {
+  margin: 0;
+}
+.UserForm__forLogin--wider a,
+.UserForm__forLogin--widerX2 a {
+  color: #4e7cff;
+  cursor: pointer;
+  text-align: right;
+  width: 100%;
+}
+.UserForm__forLogin--widerX2 {
+  width: 300px;
+  margin-top: 25px;
+}
+.UserForm__forLogin--widerX2 a {
+  width: auto;
+}
+
+.UserForm__forLogin--wider,
+.UserForm__forLogin--widerX2 {
+  width: 258px;
+  margin-bottom: 25px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.UserForm__forLogin--wider p,
+.UserForm__forLogin--widerX2 p {
+  margin: 0;
+}
+.UserForm__forLogin--wider a,
+.UserForm__forLogin--widerX2 a {
+  color: #4e7cff;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+.UserForm__forLogin--widerX2 {
+  width: 300px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.UserForm__forLogin--widerX2 a {
+  width: auto;
+  margin-top: 5px;
+}
+
+.UserForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.UserForm__topBlock {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.UserForm__userInfo {
+  padding: 15px 0;
+}
+
+.UserForm__email {
+  margin-bottom: 30px;
+}
+.UserForm__input,
+.UserForm__input--alert,
+.UserForm__input--good,
+.UserForm__input--disable {
+  width: 258px;
+  height: 46px;
+  border-radius: 15px;
+  border: 2px solid #4e7cff;
+  background: #332e59;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  vertical-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  padding-left: 12px;
+}
+.UserForm__input::placeholder,
+.UserForm__input--alert::placeholder,
+.UserForm__input--good::placeholder,
+.UserForm__input::-webkit-input-placeholder,
+.UserForm__input--alert::-webkit-input-placeholder,
+.UserForm__input--good::-webkit-input-placeholder,
+.UserForm__input::-moz-placeholder,
+.UserForm__input--alert::-moz-placeholder,
+.UserForm__input--good::-moz-placeholder {
+  color: #fff;
+}
+.UserForm__input--alert {
+  border-color: #f24e61;
+}
+.UserForm__input--good {
+  border-color: #bdff52;
+}
+.UserForm__input--disable {
+  border-color: #9592a4;
+}
+div.UserForm__input,
+div.UserForm__input--alert,
+div.UserForm__input--good {
+  padding-top: 10px;
+}
+
+#termChackbox {
+  margin-top: 7px;
+}
+#termChackbox a {
+  text-decoration: underline;
+  color: #4e7cff;
+  cursor: pointer;
+}
+.UserForm__checkboxWrapper,
+.UserForm__checkboxWrapper--alert {
+  margin-bottom: 16px;
+}
+.UserForm__checkboxWrapper--alert
+  .UserForm__checkbox
+  + .Settings__label--chackbox::before {
+  border-color: #f24e61;
+}
+.UserForm__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.Settings__label--chackbox {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-size: 12px;
+  width: 257px;
+  margin: 15px 0;
+}
+.Settings__label--chackbox::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #4e7cff;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-right: 12px;
+  margin-bottom: 13px;
+}
+.UserForm__checkbox + .Settings__label--chackbox {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  margin: 0;
+}
+/* .UserForm__checkbox + .Settings__label--chackbox {
+  margin-top: -12px;
+} */
+.alert::before {
+  border-color: #f24e61;
+}
+.UserForm__checkbox + .Settings__label--chackbox::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #4e7cff;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-right: 12px;
+  margin-bottom: 13px;
+}
+.UserForm__checkbox:checked + .Settings__label--chackbox::before {
+  background-color: #4e7cff;
+  border-color: #4e7cff;
+  background-image: url("../../Common/assets/svg/Check_mark.svg");
+}
+.UserForm__checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.UserForm__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #4e7cff;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-right: 12px;
+  margin-bottom: 13px;
+}
+.UserForm__checkbox:checked + label::before {
+  background-color: #4e7cff;
+  border-color: #4e7cff;
+  background-image: url("../../Common/assets/svg/Check_mark.svg");
+}
+.UserForm__label {
+  width: 258px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #3f4879;
+  margin-bottom: 16px;
+}
+.UserForm__label .UserForm__text {
+  color: #fff;
+  margin: 0;
+}
+.UserForm__label .UserForm__text a {
+  text-decoration: underline;
+  color: #4e7cff;
+  cursor: pointer;
+}
+.UserForm__button,
+.UserForm__button--disable,
+.UserForm__button--error,
+.UserForm__button--success,
+.UserForm__button--warning {
+  width: 258px;
+  height: 46px;
+  border-radius: 7px;
+  background: #4e7cff;
+  box-shadow: 0px 5px 5px 5px #1a203f;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  border: 0;
+  font-family: MontserratBold;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.UserForm__button--disable {
+  background: #9592a4;
+}
+
+.UserForm__button--error {
+  background: red;
+}
+
+.UserForm__button--success {
+  background: green;
+}
+
+.UserForm__button--warning {
+  background: rgba(150, 150, 74, 0.815);
+}
+
+.UserForm__button--dead {
+  background: black;
+}
+
+.UserForm__forLogin {
+  width: 258px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-align: center;
+  margin: 16px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+.UserForm__forLogin p {
+  margin: 0;
+}
+.UserForm__forLogin a {
+  text-decoration: underline;
+  color: #4e7cff;
+  cursor: pointer;
+}
+.UserForm-helper-text {
+  color: #aaa5a5;
+  width: 258px;
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  margin-top: -19px;
+  text-align: center;
+}
+.UserForm__terms {
+  text-decoration: underline;
+  color: #4e7cff;
+  cursor: pointer;
+}
+
+.UserInfo {
+  margin: 0 5px;
+}
+
+.UserInfo__username,
+.UserInfo__email {
+  margin: 1.5px;
+}
+
+.BtnToMain {
+  margin: 30px;
+  border-radius: 7px;
+  padding: 10px 20px;
+  border: 1px solid #4e7cff;
+  font-size: 16;
+}

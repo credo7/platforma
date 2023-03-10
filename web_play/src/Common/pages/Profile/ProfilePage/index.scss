@@ -1,0 +1,320 @@
+.Profile {
+  background-color: #332e59;
+  display: flex;
+  flex-direction: column;
+}
+
+.Profile__header {
+  display: flex;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  padding: 12px 5% 27px;
+}
+
+.Profile__user {
+  display: flex;
+}
+
+.Profile__commonBtn {
+  width: 115px;
+  margin-bottom: 15px;
+}
+
+.Profile__imgWrapper {
+  width: 70px;
+  height: 70px;
+  padding-right: 21px;
+}
+
+.Profile__userInfo {
+  h1,
+  p {
+    // min-width: 123px;
+    // width: calc(100vw - 274px);
+    max-width: calc(100vw - 210px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    // word-break: break-all;
+  }
+  h2 {
+    margin-top: 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &::before {
+      content: url("../../../assets/svg/Profile/Rating.svg");
+      margin-right: 7px;
+    }
+  }
+}
+
+.Profile__userTeam {
+  color: #6158a4;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.Profile__userTeam_teamName {
+  color: #6158a4;
+}
+
+.Profile__contactAndGameStat {
+  display: flex;
+  margin: 4px;
+}
+
+.Profile__contactAndGameStat__wrapper {
+  display: flex;
+}
+
+.Profile__contactAndGameStat__block {
+}
+
+.Profile__contactAndGameStat__imgWrapper {
+  width: 42px;
+  height: 42px;
+  margin-left: 16px;
+}
+
+.Profile__contactAndGameStat__imgWrapper--hidden {
+  @extend .Profile__contactAndGameStat__imgWrapper;
+  visibility: hidden;
+}
+
+.Profile__victories {
+  position: relative;
+  width: 58px;
+  font-family: MontserratBold;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: right;
+  &::before {
+    content: url("../../../assets/svg/Profile/Victories.svg");
+    position: absolute;
+    left: 8px;
+  }
+}
+
+.Profile__defeats {
+  @extend .Profile__victories;
+  &::before {
+    content: url("../../../assets/svg/Profile/Defeats.svg");
+    left: 13px;
+    top: 2px;
+  }
+}
+
+.Profile__sendMessage {
+  display: flex;
+  flex-direction: column;
+}
+
+.Profile__main {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.Profile__main__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 17px 0 30px;
+}
+
+.Profile__main__tabs {
+  list-style: none;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  .Profile__main__tab--selected:first-child {
+    &::before {
+      display: none;
+    }
+  }
+  .Profile__main__tab--selected:last-child {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+}
+
+.Profile__main__tab {
+  position: relative;
+  display: inline-block;
+  padding: 2px 11px 2px;
+
+  font-family: MontserratMedium;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4e7cff;
+  cursor: pointer;
+}
+
+.Profile__main__tab--selected {
+  @extend .Profile__main__tab;
+  color: #fff;
+  font-family: MontserratBold;
+  background-color: #2c254a;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  &::before {
+    position: absolute;
+    bottom: -1px;
+    width: 12px;
+    height: 12px;
+    content: " ";
+
+    left: -12px;
+
+    border-bottom-right-radius: 12px;
+    box-shadow: 4px 4px 0 #2c254a;
+  }
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    width: 12px;
+    height: 12px;
+    content: " ";
+
+    right: -12px;
+
+    border-bottom-left-radius: 12px;
+    box-shadow: -4px 4px 0 #2c254a;
+  }
+}
+
+.Profile__main__userMedia {
+  margin-top: -5px;
+  white-space: nowrap;
+}
+
+.Profile__main__imgWrapper {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-left: 19px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.wrapDotsAndInvite {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Profile__dots__imgWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 32px;
+  // height: 42px;
+  margin-top: 7px;
+  img {
+    cursor: pointer;
+  }
+}
+
+.Profile__usernameAndDots {
+  display: flex;
+  position: relative;
+}
+
+/* --------------------------------------------------- Ipads (portrait)------------------- */
+// @media (min-width: 768px) {
+//   .Profile {
+//   }
+
+//   .Profile__header {
+//     padding: 12px 45px 27px;
+//     width: 720px;
+//   }
+
+//   .Profile__main__header {
+//     padding: 0 125px;
+//   }
+
+//   .GamesHistory {
+//     padding: 16px 45px 0 45px !important;
+//   }
+// }
+/* --------------------------------------------------- КОНЕЦ Ipads (portrait)------------------- */
+
+/* --------------------------------------------------- Laptops -------------------------------------- */
+// @media (min-width: 1024px) {
+//   .Profile__header {
+//     width: 819px;
+//   }
+// }
+
+/* --------------------------------------------------- КОНЕЦ Laptops -------------------------------- */
+
+/* --------------------------------------------------- Desktops  ------------------------------------ */
+// @media (min-width: 1281px) {
+//   .Profile__header {
+//     width: 990px;
+//     padding-left: 64px;
+//   }
+
+//   .Profile__userInfo p {
+//     font-size: 18px;
+//   }
+
+//   .Profile__usernameAndDots h1 {
+//     font-size: 22px;
+//   }
+
+//   .Profile__userInfo h2 {
+//     font-size: 22px;
+//   }
+
+//   .Profile__main__tab,
+//   .Profile__main__tab--selected {
+//     font-size: 18px;
+//     padding: 5px 11px 5px;
+//   }
+
+//   .Friends__tab,
+//   .Friends__tab--selected {
+//     font-size: 18px !important;
+//   }
+
+//   .GamesHistory {
+//     padding-left: 65px !important;
+//   }
+// }
+/* --------------------------------------------------- КОНЕЦ Desktops  ------------------------------ */
+
+// @media (min-width: 1450px) {
+//   .Profile__header {
+//     padding-left: 90px;
+//   }
+
+//   .GamesHistory {
+//     padding-left: 85px !important;
+//   }
+// }
+
+// @media (min-width: 1600px) {
+//   .Profile__header {
+//     padding-left: 105px;
+//   }
+
+//   .GamesHistory {
+//     padding-left: 105px !important;
+//   }
+// }
+
+// @media (min-width: 1700px) {
+//   .Profile__header {
+//     padding-left: 145px;
+//   }
+
+//   .GamesHistory {
+//     padding-left: 145px !important;
+//   }
+// }

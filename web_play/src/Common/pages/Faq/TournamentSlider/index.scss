@@ -1,0 +1,42 @@
+.faqQuestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.faqQuestion__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.wrapCarousel {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.legend {
+  opacity: 1 !important;
+  font-size: 14px !important;
+  bottom: 20px;
+}
+
+.faqQuestion__linkGoBack {
+  margin: 23px 0;
+  border: 2px solid #4e7cff;
+  border-radius: 15px;
+  width: 130px;
+  min-height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------------------------------- Ipads (portrait)------------------- */
+// @media (min-width: 768px) {
+//   .wrapCarousel {
+//     max-width: 300px;
+//   }
+// }
+/* --------------------------------------------------- КОНЕЦ Ipads (portrait)------------------- */

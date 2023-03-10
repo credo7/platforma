@@ -1,0 +1,14 @@
+{
+  "name": "pgp2",
+  "version": "2.0.0",
+  "private": true,
+  "author": "PWRG",
+  "license": "MIT",
+  "contributors": [
+    "Hero",
+    "Anton"
+  ],
+  "scripts": {
+    "dc": "bash .bin/dc.sh"
+  }
+}

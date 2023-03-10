@@ -1,0 +1,122 @@
+.Tournaments {
+  min-height: calc(100vh - 195px);
+  /* overflow: scroll; */
+  overflow-x: hidden;
+}
+
+.Tournaments__header {
+  display: flex;
+  width: 100%;
+  height: 34px;
+  background: #332e59;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.Tournaments__search {
+  display: flex;
+  cursor: pointer;
+  span {
+    display: inline-block;
+    margin-right: 9px;
+  }
+}
+
+.Tournaments__search__imgWrapper {
+  width: 15px;
+  height: 15px;
+  padding-right: 8px;
+}
+
+.Tournaments__tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.Tournaments__tab {
+  position: relative;
+  font-family: MontserratMedium;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 6px 15px 11px;
+  cursor: pointer;
+}
+
+.Tournaments__tab--selected {
+  @extend .Tournaments__tab;
+  font-family: MontserratBold;
+  background: #2c254a;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px;
+  margin-bottom: -4px;
+  .RoundCornerWrapperBR {
+    opacity: 1;
+    .RoundCornerBR {
+      height: 13px;
+    }
+  }
+  .RoundCornerWrapperBL {
+    opacity: 1;
+    .RoundCornerBL {
+      height: 13px;
+    }
+  }
+}
+
+.Tournaments__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Tournaments__filters {
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: MontserratBold;
+  font-size: 10px;
+}
+
+.Tournaments__filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 28px;
+  background: #9592a4;
+  border-radius: 13px;
+  margin-left: 50px;
+  cursor: pointer;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.Tournaments__filter--selected {
+  @extend .Tournaments__filter;
+  background: #4e7cff;
+}
+
+.Tournaments__cardsWrapper {
+}
+
+.Team__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 14px;
+  width: 338px;
+  height: 46px;
+  background: #4e7cff;
+  box-shadow: 0px 4px 4px rgba(53, 117, 175, 0.2);
+  border-radius: 15px;
+  cursor: pointer;
+}

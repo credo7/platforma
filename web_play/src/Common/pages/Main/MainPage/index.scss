@@ -1,0 +1,42 @@
+.Main__Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin-top: 250px;
+}
+
+.Main__Wrapper > * {
+  padding: 7px 0;
+}
+
+.Main__Text {
+  font-weight: bold;
+  text-align: center;
+  font-family: MontserratRegular;
+}
+
+.Main__Text > * {
+  padding: 5px 0;
+}
+
+.Main__Btns {
+  display: flex;
+}
+
+.Main__Btns > * {
+  padding: 3px;
+  margin: 0 10px;
+}
+
+.Main__Social__Wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Main__Social__Wrapper > * {
+  padding: 5px;
+}
+
+.Main__Btn--red {
+  background-color: red;
+}

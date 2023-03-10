@@ -1,0 +1,283 @@
+$width: 258px;
+$height: 46px;
+$inputBorderRad: 15px;
+$btnBorderRad: 15px;
+
+.PlayerSettings {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Sttings__wrapper {
+  height: 100%;
+  display: flex;
+}
+
+.Settings__content {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  background-color: #332e59;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  form {
+    margin-top: 32px;
+  }
+}
+
+.Settings__content_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sttings__IconEditContainer {
+  margin-top: 19px;
+  text-align: center;
+}
+
+.Settings__tabs {
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  writing-mode: vertical-rl;
+  position: relative;
+  & .Settings__tab--selected:first-child {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.Settings__tab {
+  transform: rotate(180deg);
+  position: relative;
+  font-family: MontserratMedium;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px 4px;
+  background: #2c254a;
+  display: inline-block;
+  color: #4e7cff;
+  z-index: 0;
+  cursor: pointer;
+
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  &::before {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    content: "";
+
+    bottom: -11px;
+    left: -1px;
+
+    border-top-left-radius: 12px;
+  }
+  &::after {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    content: "";
+
+    left: -1px;
+    bottom: calc(100% - 1px);
+
+    border-bottom-left-radius: 12px;
+  }
+}
+
+.Settings__tab--selected {
+  @extend .Settings__tab;
+  font-family: MontserratBold;
+  color: #fff;
+  z-index: 2;
+  background-color: #332e59;
+  &::before {
+    box-shadow: -4px -4px 0 #332e59;
+  }
+  &::after {
+    box-shadow: -4px 4px 0 #332e59;
+  }
+}
+
+.Settings__button {
+  width: $width;
+  height: $height;
+  border-radius: $btnBorderRad;
+  background: #4e7cff;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  font-family: MontserratBold;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.Settings__button--disable {
+  @extend .Settings__button;
+  background: #9592a4;
+}
+
+.Settings__button--withMargenTop {
+  @extend .Settings__button;
+  margin-top: 12px !important;
+}
+
+.Settings__languages {
+  width: $width;
+  height: $height;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.Settings__buttonLang {
+  @extend .Settings__button;
+  width: 123px;
+  background: #9592a4;
+}
+
+.Settings__buttonLang--selected {
+  @extend .Settings__buttonLang;
+  background: #4e7cff;
+}
+
+.Settings__input {
+  width: $width;
+  height: $height;
+  border-radius: $inputBorderRad;
+  border: 2px solid #4e7cff;
+  background: #fff;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 16px;
+  padding-left: 7px;
+  .bp3-input {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    background: transparent;
+    border: 0px;
+
+    width: calc(100% - 15px);
+    height: 100%;
+
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    padding-left: 15px;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+  &.bp3-intent-danger {
+    border-color: #f24e61;
+  }
+}
+
+.Settings__input--whithPadding {
+  @extend .Settings__input;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+}
+
+.Settings__input--whithPaddingAlert {
+  @extend .Settings__input--whithPadding;
+  border-color: #f24e61;
+}
+
+.Settings__input--higherMarginBottom {
+  @extend .Settings__input;
+  margin-bottom: 16px;
+}
+
+.Settings__checkboxContainer {
+  margin-bottom: 12px;
+}
+
+.Settings__label {
+  width: $width;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4e7cff;
+}
+
+.Settings__LabelText {
+  color: #4e7cff;
+  margin: 0 0 12px;
+}
+
+.Settings__imgLoad {
+  width: $width;
+  height: $height;
+}
+
+.Settings__input--imgPath {
+  @extend .Settings__input;
+  display: block;
+  width: 57%;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 15px;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.Setting__button--uploads {
+  @extend .Settings__button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41%;
+  margin: 0;
+}
+
+.Settings__textarea {
+  @extend .Settings__input;
+  margin: 0;
+  resize: vertical;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-family: MontserratRegular;
+  &::placeholder {
+    font-family: MontserratRegular;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &::-webkit-resizer {
+    display: none;
+  }
+}
+
+.Settings__textareaWrapper {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.tab--hide {
+  display: none;
+}
+
+.IconEdit__buttons > * {
+  padding: 0 10px;
+}

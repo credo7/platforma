@@ -1,0 +1,43 @@
+.TournametSearch__form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background: #332e59;
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+  line-height: 25px;
+}
+
+.TournametSearch__field {
+  margin: 5px;
+}
+
+.TournametSearch__input,
+.TournametSearch__input--error {
+  line-height: 25px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #fff;
+}
+
+.TournametSearch__input--error {
+  border: 1px solid red;
+}
+
+.TournametSearch__btn,
+.TournametSearch__btn--disabled {
+  line-height: 25px;
+  font-size: 13px;
+  background: #c58e3a;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.TournametSearch__btn--disabled {
+  background: gray;
+}

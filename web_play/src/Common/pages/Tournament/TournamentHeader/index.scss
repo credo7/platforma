@@ -1,0 +1,319 @@
+.TournamentDetails {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.TournamentDetails__isTeamPlayer {
+  display: inline-block;
+  width: 75px;
+  height: 40px;
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid #4e7cff;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.TournamentDetails__isTeamPlayer_wide {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  letter-spacing: 1px;
+  height: auto;
+}
+
+.TournamentDetails__header {
+  background: #332e59;
+}
+
+.TournamentDetails__mainInfo {
+  width: 100%;
+  font-family: MontserratBold;
+  font-size: 16px;
+  padding: 13px 21px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.TournamentDetails__topic {
+  margin: 0;
+  span {
+    margin-right: 10px;
+  }
+}
+
+.TournamentDetails__gameType {
+  color: #4e7cff;
+  margin-top: 5px;
+}
+
+.TournamentDetails__date {
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  /* span {
+    margin-left: 20px;
+  } */
+}
+
+.TournamentDetails__dates {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  span {
+    margin: 5px 4px;
+    font-size: 14px;
+    font-family: MontserratRegular;
+  }
+}
+
+.TournamentDetails__addition {
+  font-family: MontserratBold;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 21px 13px;
+}
+
+.TournamentDetails__addition__prize {
+  display: flex;
+  margin: 0;
+}
+
+.TournamentDetails__addition__party {
+  display: flex;
+  margin: 0;
+  padding-left: 14px;
+}
+
+.TournamentDetails__addition__prizeImg {
+  width: 14px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.TournamentDetails__addition__partyImg {
+  width: 25px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.TournamentDetails__btnBlock {
+  cursor: pointer;
+  display: flex;
+  // align-items: center;
+  // flex-direction: column;
+}
+
+.TournamentDetails__status {
+  font-family: MontserratBold;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 13px;
+}
+
+.TournamentDetails__tabs {
+  display: flex;
+  font-family: MontserratMedium;
+  justify-content: center;
+  font-size: 12px;
+  color: #4e7cff;
+  list-style: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  background: #332e59;
+  margin: 0;
+  padding: 0;
+}
+
+.TournamentDetails__tab {
+  position: relative;
+  padding: 7px 8px;
+  margin-left: 5px;
+  cursor: pointer;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.TournamentDetails__tab--selected {
+  @extend .TournamentDetails__tab;
+  color: #fff;
+  font-family: MontserratBold;
+  background: #2c254a;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: -4px;
+  .RoundCornerWrapperBR {
+    opacity: 1;
+    .RoundCornerBR {
+      height: 8px;
+    }
+  }
+  .RoundCornerWrapperBL {
+    opacity: 1;
+  }
+  .RoundCornerBL {
+    height: 8px;
+  }
+}
+
+.TournamentDetails__wrapperAdminAction {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.TournamentDetails__adminAction {
+  font-size: 9px;
+  margin-left: 0;
+  width: 50%;
+}
+
+.TournametDetails__teamSize {
+  color: #f3a939;
+}
+
+.editButton {
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #4e7cff;
+}
+
+.raundsColorRed {
+  color: red;
+}
+
+.commonBtn_red {
+  background-color: red;
+}
+
+.TournamentDetails__registration {
+  color: #fff;
+}
+
+.TournamentDetails__confirmation {
+  color: #fff;
+}
+.TournamentDetails__live {
+  color: #fff;
+}
+/* --------------------------------------------------- Ipads (portrait)------------------- */
+// @media (min-width: 768px) {
+//   .TournamentDetails__header {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+
+//   .TournamentDetails__mainInfo {
+//     width: 88%;
+//     padding: 13px 0;
+//     font-size: 18px;
+//   }
+
+//   .TournamentDetails__gameType {
+//     font-size: 14px;
+//   }
+
+//   .TournamentDetails__date {
+//     .Text-12px-500 {
+//       font-size: 14px;
+//     }
+//   }
+
+//   .TournamentDetails__addition {
+//     width: 88%;
+//     margin: 13px 10px;
+//   }
+
+//   .TournamentDetails__adminAction {
+//     margin-left: 0;
+//     margin-right: 0;
+//     font-size: 9.8px;
+//   }
+
+//   .TournamentDetails__tab {
+//     font-size: 13px;
+//   }
+// }
+/* --------------------------------------------------- КОНЕЦ Ipads (portrait)------------------- */
+
+/* --------------------------------------------------- Laptops -------------------------------------- */
+// @media (min-width: 1024px) {
+//   .TournamentDetails__mainInfo {
+//     width: 90%;
+//   }
+
+//   .TournamentDetails__addition {
+//     width: 90%;
+//   }
+
+//   .TournamentDetails__adminAction {
+//     font-size: 10px;
+//   }
+// }
+/* --------------------------------------------------- КОНЕЦ Laptops -------------------------------- */
+
+/* --------------------------------------------------- Desktops  ------------------------------------ */
+// @media (min-width: 1281px) {
+//   .TournamentDetails__mainInfo {
+//     font-size: 20px;
+//   }
+
+//   .TournamentDetails__gameType {
+//     font-size: 15px;
+//   }
+
+//   .TournamentDetails__date {
+//     .Text-12px-500 {
+//       font-size: 15px;
+//     }
+//   }
+
+//   .TournamentDetails__tab {
+//     font-size: 15px;
+//     padding: 5px 8px;
+//   }
+// }
+/* --------------------------------------------------- КОНЕЦ Desktops  ------------------------------ */
+// @media (min-width: 1450px) {
+//   .TournamentDetails__mainInfo {
+//     width: 88%;
+//   }
+
+//   .TournamentDetails__addition {
+//     width: 88%;
+//   }
+// }
+
+// @media (min-width: 1600px) {
+//   .TournamentDetails__mainInfo {
+//     width: 86.5%;
+//   }
+
+//   .TournamentDetails__addition {
+//     width: 86.5%;
+//   }
+// }
+
+// @media (min-width: 1700px) {
+//   .TournamentDetails__mainInfo {
+//     width: 84%;
+//   }
+
+//   .TournamentDetails__addition {
+//     width: 84%;
+//   }
+// }

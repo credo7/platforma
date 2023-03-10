@@ -1,0 +1,92 @@
+version: "3.7"
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: pgp2
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+# version: '3'
+# services:
+#   db:
+#     restart: always
+#     container_name: db
+#     image: postgres:11.13
+#     environment:
+#       - POSTGRES_PORT=5432
+#       - POSTGRES_DB=pgp2
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=root
+#       - POSTGRES_HOST=localhost
+#       # - POSTGRES_USER=${USERS_POSTGRES_USER}
+#       # - POSTGRES_PASSWORD=${USERS_POSTGRES_PASSWORD}
+#       # - POSTGRES_DB=${USERS_POSTGRES_DB}
+#       - TZ=Europe/Moscow
+#       - PGTZ=Europe/Moscow
+#     volumes:
+#       # - ./data/pgdata:/var/lib/postgresql/data/pgdata
+#       - ./volumes/data:/var/lib/postgresql/data
+#       - ./entrypoint:/docker-entrypoint-initdb.d
+#     ports:
+#       - 5432:5432
+#     command: postgres -c stats_temp_directory=/tmp
+    # version: "3.9"
+    # services:
+    #   databasepgpz:
+    #     restart: always
+    #     container_name: databasepgp2
+    #     image: postgres:11.13
+    #     environment:
+    #       - POSTGRES_PORT=5432
+    #       - POSTGRES_DB=pgp2
+    #       - POSTGRES_USER=postgres
+    #       - POSTGRES_PASSWORD=root
+    #       - POSTGRES_HOST=localhost
+    #       # - POSTGRES_USER=${POSTGRES_USER}
+    #       # - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    #       # - POSTGRES_DB=${POSTGRES_DB}
+    #       - TZ=Europe/Moscow
+    #       - PGTZ=Europe/Moscow
+    #       - PGDATA="/var/lib/postgresql/data/pgdata"
+    #     env_file: .env
+    #     volumes:
+    #       - ./data/pgdata:/var/lib/postgresql/data/pgdata
+    #       - ./entrypoint:/docker-entrypoint-initdb.d
+    #     command: postgres -p 5432 -c max_connections=300 -c shared_buffers=512MB -c effective_cache_size=4GB -c work_mem=16MB -c maintenance_work_mem=512MB -c random_page_cost=1.1 -c temp_file_limit=10GB -c log_min_duration_statement=200ms -c idle_in_transaction_session_timeout=10s -c lock_timeout=1s -c statement_timeout=60s -c shared_preload_libraries=pg_stat_statements -c pg_stat_statements.max=10000 -c pg_stat_statements.track=all
+    #     ports:
+    #       - 5432:5432
+    # command: postgres -c stats_temp_directory=/tmp
+    # postgres:
+    #   container_name: pgp2_postgres_${CONFIG_ENV}_${NODE_ENV}
+    #   image: pgp2_postgres_${CONFIG_ENV}_${NODE_ENV}
+    #   build: ./
+    #   env_file: .env
+    # environment:
+    #   PGDATA: "/var/lib/postgresql/data/pgdata"
+    #   ports:
+    #     - 127.0.0.1:${EXPOSE_POSTGRES_PORT}:${POSTGRES_PORT}
+    #   volumes:
+    #     - ./data/pgdata:/var/lib/postgresql/data/pgdata
+    #     - ./entrypoint:/docker-entrypoint-initdb.d
+    #   command: postgres -p ${POSTGRES_PORT} -c max_connections=300 -c shared_buffers=512MB -c effective_cache_size=4GB -c work_mem=16MB -c maintenance_work_mem=512MB -c random_page_cost=1.1 -c temp_file_limit=10GB -c log_min_duration_statement=200ms -c idle_in_transaction_session_timeout=10s -c lock_timeout=1s -c statement_timeout=60s -c shared_preload_libraries=pg_stat_statements -c pg_stat_statements.max=10000 -c pg_stat_statements.track=all
+    #   # healthcheck:
+    #   #   test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+    #   #   interval: 10s
+    #   #   timeout: 5s
+    #   #   retries: 5
+    #   #   start_period: 10s
+    #   restart: unless-stopped
+    #     deploy:
+    #       resources:
+    #         limits:
+    #           cpus: "1"
+    #           memory: 4G
+
+    # networks:
+    #   default:
+    #     external:
+    #       name: pgp

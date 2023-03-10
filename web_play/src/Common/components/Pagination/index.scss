@@ -1,0 +1,33 @@
+.Pagination__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Pagination__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Pagination__content > * {
+  padding: 5px;
+}
+
+.Pagination__btn,
+.Pagination__btn--disable {
+  border-radius: 15px;
+  background: #4e7cff;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  font-family: MontserratBold;
+  cursor: pointer;
+}
+
+.Pagination__btn--disable {
+  background: rgb(121, 119, 119);
+}

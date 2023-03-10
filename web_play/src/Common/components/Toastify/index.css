@@ -1,0 +1,142 @@
+a {
+  color: #303031;
+}
+
+a:visited {
+  color: #303031;
+}
+
+a:active {
+  color: #303031;
+}
+
+.ManagersCard {
+  width: 212px;
+  height: 312px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5rem;
+  transition: all 0.5s;
+  margin: 1rem;
+}
+
+.ManagersCard:hover {
+  transform: scale(1.03);
+}
+
+/* ---- для адаптивного отображения картинки ---- */
+.ManagersCard__photoWrapper {
+  position: relative;
+  padding-top: 79.25%;
+  width: 72%;
+  margin-top: 5%;
+}
+
+.ManagerCard__photo {
+  position: absolute;
+  top: 0;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  left: 50%;
+  transform: translate(-50%);
+}
+/* ---- КОНЕЦ (для адаптивного отображения картинки) ---- */
+
+.ManagerCard__firstname,
+.ManagerCard__lastname {
+  font-size: 1.563rem;
+  font-weight: 800;
+  line-height: 1.25rem;
+}
+
+.ManagerCard__position {
+  width: 70%;
+  max-height: 35px;
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 11%;
+  margin-bottom: 13%;
+  overflow: hidden;
+}
+
+/* ----------------------------- media ------------------------------------  */
+
+/* @media (min-width: 481px) and (max-width: 768px) {
+  .ManagersCard {
+    width: 102px;
+    height: 162px;
+  }
+
+  .ManagerCard__position {
+    max-height: 25px;
+  }
+
+  .ManagerCard__photo {
+    width: 70px;
+    height: 70px;
+    top: 5px;
+  }
+
+  .ManagerCard__firstname,
+  .ManagerCard__lastname {
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.25rem;
+  }
+} */
+
+/* @media (min-width: 769px) and (max-width: 1024px) {
+  .ManagersCard {
+    width: 122px;
+    height: 202px;
+  }
+
+  .ManagerCard__photo {
+    width: 85px;
+    height: 85px;
+  }
+
+  .ManagerCard__position {
+    max-height: 25px;
+  }
+} */
+
+/* @media (min-width: 1025px) and (max-width: 1200px) {
+  .ManagersCard {
+    width: 172px;
+    height: 272px;
+  }
+
+  .ManagerCard__photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .ManagerCard__position {
+    max-height: 30px;
+  }
+} */
+
+/* @media (min-width: 1201px) and (max-width: 1450px) {
+  .ManagersCard {
+    width: 202px;
+    height: 302px;
+  }
+
+  .ManagerCard__photo {
+    width: 130px;
+    height: 130px;
+  }
+} */
+
+/* @media (min-width: 1454px) {
+} */
+
+/* @media (min-width: 1700px) {
+} */

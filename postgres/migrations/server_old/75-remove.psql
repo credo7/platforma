@@ -1,0 +1,8 @@
+DROP EXTENSION IF EXISTS postgres_fdw CASCADE;
+
+DROP SCHEMA old CASCADE;
+
+DROP TYPE IF EXISTS public."emailType";
+DROP TYPE IF EXISTS public."transactionsStatus";
+DROP TYPE IF EXISTS public."tournamentStatus";
+DROP TYPE IF EXISTS public."tournamentFormat";

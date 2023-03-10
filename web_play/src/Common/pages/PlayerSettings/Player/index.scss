@@ -1,0 +1,36 @@
+.Settings__gamesTab {
+  width: 284px;
+}
+
+.Settings__gameSign {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  font-family: MontserratBold;
+  margin: 16px 0 13px;
+  text-align: center;
+}
+
+.Settings__gameSign_text {
+  text-align: center;
+  font-size: 10px;
+}
+
+.Settings__idInputWrapper {
+  position: relative;
+}
+
+.Settings__imgHelp {
+  position: absolute;
+  right: -16px;
+  top: 9.5px;
+  cursor: pointer;
+}
+
+.Settings__error {
+  font-size: 12px;
+  text-align: center;
+  padding: 5px 0;
+  color: red;
+}

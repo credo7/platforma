@@ -1,0 +1,197 @@
+.BlockField {
+  z-index: 4;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: -100vw;
+  &.active {
+    right: 0;
+  }
+}
+
+.SidePanel {
+  position: fixed;
+  z-index: 100;
+  min-width: 195px;
+  max-width: 250px;
+  // height: calc(100vh - 69px);
+  // height: calc((var(--vh, 1vh) * 100) - 69px);
+  height: 100%;
+  background: #2c254a;
+  box-shadow: 0px 15px 15px 15px rgba(0, 0, 0, 0.25);
+  padding: 44px 0 25px 25px;
+  color: #fff;
+  font-family: MontserratBold;
+  right: -250px;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  &.active {
+    right: 0;
+  }
+  // @media (orientation: landscape) {
+  //   height: calc(100vh - 69px);
+  // }
+}
+
+.SidePanel__user {
+  margin-bottom: 20px;
+}
+
+.SidePanel__nick {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 4px;
+}
+
+.SidePanel__nick--withStar {
+  @extend .SidePanel__nick;
+
+  &::after {
+    position: relative;
+    content: url("../../assets/svg/Side_panel/Rank_Star.svg");
+    top: -6px;
+    left: 3px;
+  }
+}
+
+.SidePanel__userRank {
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0 0 8px;
+}
+
+.SidePanel__nearestTournament {
+  margin-bottom: 47px;
+}
+
+.SidePanel__nearestTournament_list {
+  overflow-y: auto;
+  max-height: 20vh;
+  max-width: 91%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.SidePanel__nearestTournament_list::-webkit-scrollbar {
+  width: 10px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: #3f69df;
+  border-radius: 6em;
+}
+
+.SidePanel__nearestTournament_list::-webkit-scrollbar-thumb {
+  background-color: #403a6e;
+  border-radius: 6em;
+  box-shadow: inset 1px 1px 10px #47407a;
+  height: 50px;
+}
+
+.SidePanel__nearestTournament_list::-webkit-scrollbar-thumb:hover {
+  background-color: #47407a;
+}
+
+.SidePanel__comonText {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+}
+
+.SidePanel__comonText_bigFont {
+  font-size: 18px;
+}
+
+.TextOverflow {
+  max-width: 103px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.SidePanel__date {
+  font-family: MontserratSemiBold;
+  color: #4e7cff;
+  font-size: 16px;
+  line-height: 17px;
+  margin: 8px 0 0;
+}
+
+.SidePanel__option {
+  display: flex;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.SidePanel__option__imgContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 23px;
+  margin-right: 28px;
+}
+
+.SidePanel__option__imgContainer__indicator {
+  text-align: center;
+  position: absolute;
+  min-width: 10px;
+  height: 10px;
+  bottom: 0px;
+  left: 17px;
+  border-radius: 50px;
+  font-size: 8px;
+  background: #ff000f;
+  padding: 0 3px;
+  box-sizing: border-box;
+}
+
+.SidePanel__footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  bottom: 0;
+  padding-bottom: 25px;
+  padding-left: 21px;
+}
+
+.SidePanel__admin {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  bottom: 0;
+  padding-bottom: 55px;
+  padding-left: 21px;
+}
+
+#Logout {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.SidePanel__language {
+  display: inline-block;
+  height: 25px;
+  padding: 6px 5px 0;
+  cursor: pointer;
+  &:first-child {
+    border-right: 1.5px solid #ffffff;
+  }
+}
+
+.SidePanel__language.selected {
+  color: #4e7cff;
+}
+
+.SidePanel__noLogin {
+  margin-top: 33vh;
+}
+
+@media only screen and (min-device-width: 380px) and (max-device-width: 10000px) {
+  .SidePanel {
+    height: 815px;
+  }
+}

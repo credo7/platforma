@@ -1,0 +1,29 @@
+{
+  "name": "pgadmin",
+  "version": "2.0.0",
+  "private": true,
+  "author": "PWRG",
+  "license": "MIT",
+  "contributors": [
+    "Hero",
+    "Anton"
+  ],
+  "main": "src/migrate.js",
+  "scripts": {
+    "migrate": "npx babel-node src/migrate.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/eslint-parser": "^7.11.0",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "@babel/runtime": "^7.11.2",
+    "dotenv": "^10.0.0",
+    "postgres-migrations": "^5.3.0"
+  }
+}

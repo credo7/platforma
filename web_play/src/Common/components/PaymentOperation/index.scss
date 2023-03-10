@@ -1,0 +1,12 @@
+.PaymentOperation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.PaymentOperation__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin: 0;
+  padding-bottom: 12px;
+}

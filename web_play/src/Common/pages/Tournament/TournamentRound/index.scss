@@ -1,0 +1,56 @@
+.TournamentRound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TournamentRound__round_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.TournamentRound__round_wrap2 {
+  padding: 10px;
+  margin: 20px;
+}
+
+.TournamentRound__round {
+  font-family: MontserratBold;
+  font-size: 14px;
+  margin-top: 7px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.TournamentRound__round_text {
+  color: #f2b04e;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.TournamentRound__cardsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TournamentRound__card {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  .UserCard {
+    margin-bottom: 0;
+  }
+}
+
+.TournamentRound__round__btn {
+  margin: 20px 0;
+}

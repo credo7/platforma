@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+
+.gitignore
+
+.env
+
+/data
+/var/lib/postgresql/data/pgdata

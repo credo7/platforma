@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "signGame",
+    "comment": "Чтобы подключить игру необходимо зайти в главное меню",
+    "indicator": "indicator-menu",
+    "url": "/"
+  },
+  {
+    "id": 2,
+    "name": "signGame",
+    "comment": "Перейти в настройки",
+    "indicator": "indicator-menu",
+    "url": "/"
+  },
+  {
+    "id": 3,
+    "name": "signGame",
+    "comment": "Перейти на вкладку \"Привязка игр\"",
+    "indicator": "indicator-menu",
+    "url": "/"
+  },
+  {
+    "id": 4,
+    "name": "signGame",
+    "comment": "ВАЖНО!\n Нужно указывать именно тот ник, который используется в игре PUBG Mobile. Если Ник указан отличный от Ника игры, результат проведенного турнира не отобразится.",
+    "indicator": "indicator-menu",
+    "url": "/"
+  }
+]

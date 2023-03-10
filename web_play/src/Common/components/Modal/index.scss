@@ -1,0 +1,34 @@
+.Modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal__open {
+  padding: 8px;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+
+.Modal__close {
+  float: right;
+  font-size: 1.5em;
+  padding: 8px;
+  color: #fff;
+}
+
+.Modal__timer {
+  animation: timer 30s linear 0s 1;
+}
+
+@keyframes timer {
+  from {
+    width: 94%;
+  }
+
+  to {
+    width: 0%;
+  }
+}

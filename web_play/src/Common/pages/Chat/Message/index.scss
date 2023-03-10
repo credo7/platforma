@@ -1,0 +1,56 @@
+.Chat__MyMessage {
+  display: flex;
+  width: 100%;
+  padding: 0 17px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+  &:first-child {
+    margin-top: 18px;
+  }
+  font-size: 10pt;
+}
+
+.Chat__NotMyMessage {
+  @extend .Chat__MyMessage;
+  flex-direction: row-reverse;
+  .Chat__MyMessage__time {
+    margin-right: 0;
+  }
+  .Chat__MyMessage__message {
+    margin-right: 10px;
+  }
+  .Chat__MyMessage__imgWrapper {
+    margin-right: 12px;
+    min-width: 32px;
+    height: 32px;
+  }
+}
+
+.Chat__MyMessage__time {
+  opacity: 0.5;
+  margin-bottom: 0;
+  margin-left: 8px;
+  float: right;
+  height: 12px;
+  text-align: center;
+}
+
+.Chat__MyMessage__message {
+  max-width: 44vw;
+  word-wrap: break-word;
+  background: #2c254a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 8px 11px 8px 14px;
+  box-sizing: border-box;
+  margin-right: 12px;
+}
+
+.Chat__MyMessage__imgWrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 13px;
+  overflow: hidden;
+}

@@ -1,0 +1,89 @@
+.TeamSettings {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 10px;
+}
+
+.TeamSettings__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 17px 14px 30px;
+}
+
+.TeamSettings__tabs {
+  list-style: none;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  .TeamSettings__tab--selected:first-child {
+    &::before {
+      display: none;
+    }
+  }
+  .TeamSettings__tab--selected:last-child {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+}
+
+.TeamSettings__tab {
+  position: relative;
+  display: inline-block;
+  padding: 2px 11px 2px;
+
+  font-family: MontserratMedium;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4e7cff;
+  cursor: pointer;
+}
+
+.TeamSettings__tab--selected {
+  @extend .TeamSettings__tab;
+  color: #fff;
+  font-family: MontserratBold;
+  background-color: #2c254a;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  &::before {
+    position: absolute;
+    bottom: -1px;
+    width: 12px;
+    height: 12px;
+    content: " ";
+
+    left: -12px;
+
+    border-bottom-right-radius: 12px;
+    box-shadow: 4px 4px 0 #2c254a;
+  }
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    width: 12px;
+    height: 12px;
+    content: " ";
+
+    right: -12px;
+
+    border-bottom-left-radius: 12px;
+    box-shadow: -4px 4px 0 #2c254a;
+  }
+}
+
+.TeamSettings__userMedia {
+  margin-top: -5px;
+  white-space: nowrap;
+}
+
+.TeamSettings__imgWrapper {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-left: 19px;
+  &:first-child {
+    margin-left: 0;
+  }
+}

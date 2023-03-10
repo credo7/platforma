@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "dev",
+      "script": "babel-node src/app.js",
+      "watch": true
+    },
+    {
+      "name": "prod",
+      "script": "build/app.js"
+    }
+  ]
+}

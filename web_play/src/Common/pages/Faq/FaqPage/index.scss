@@ -1,0 +1,64 @@
+.faqQuestion__wrapLink {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.faqQuestion__link {
+  margin-bottom: 15px;
+}
+
+.wrapCarousel {
+  border: 0.5px solid #4e7cff;
+  padding: 3px;
+  border-radius: 20px;
+}
+
+.carousel .carousel-status {
+  display: none !important;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 15px solid red !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 15px solid red !important;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+  border-top: 18px solid transparent !important;
+  border-bottom: 18px solid transparent !important;
+}
+
+.carousel .slide .element {
+  position: relative;
+  height: 50vh;
+}
+
+.carousel .slide .legenda {
+  position: absolute;
+  z-index: 1000;
+  padding: 5px;
+  margin: 5px;
+  top: 50vh;
+  // bottom: 0;
+  // left: 53%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.carousel .slide .indicator {
+  position: absolute;
+  z-index: 1000;
+}
+
+.carousel .slide .window {
+  position: absolute;
+}

@@ -1,0 +1,92 @@
+.Anonce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px 58px;
+  .BigLogo {
+    margin-top: 22px;
+    margin-bottom: 23px;
+  }
+}
+
+.Anonce__header {
+  margin-bottom: 15px;
+}
+
+.afisha {
+  width: 300px;
+  height: 160px;
+}
+
+.Anonce__section {
+  margin-bottom: 5px;
+}
+
+.Anonce__h2 {
+  font-family: MontserratExtraBold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4e7cff;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.Anonce__message {
+  text-align: center;
+}
+
+.Anonce__message_link {
+  display: inline-block;
+  width: 225px;
+  font-size: 12px;
+  border: 1px solid #4e7cff;
+
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.Anonce__announc {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Anonce__tariffs {
+  @extend .Anonce__announc;
+}
+
+.Text-16px-700 {
+  text-align: center;
+}
+
+/* --------------------------------------------------- Ipads (portrait)------------------- */
+// @media (min-width: 768px) {
+//   .Anonce {
+//     .BigLogo {
+//       display: none;
+//     }
+//   }
+// }
+/* --------------------------------------------------- КОНЕЦ Ipads (portrait)------------------- */
+
+/* --------------------------------------------------- Laptops -------------------------------------- */
+// @media (min-width: 1024px) {
+//   .Anonce__h2 {
+//     font-size: 30px;
+//     margin-bottom: 17px;
+//   }
+// }
+
+/* --------------------------------------------------- КОНЕЦ Laptops -------------------------------- */
+
+/* --------------------------------------------------- Desktops  ------------------------------------ */
+// @media (min-width: 1281px) {
+//   .commonBtn,
+//   .commonBtn--disable {
+//     width: 132px;
+//     height: 39px;
+//     font-size: 12px;
+//   }
+// }
+/* --------------------------------------------------- КОНЕЦ Desktops  ------------------------------ */

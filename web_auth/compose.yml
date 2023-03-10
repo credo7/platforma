@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  web_auth:
+    container_name: pgp2_web_auth_${CONFIG_ENV}_${NODE_ENV}
+    image: pgp2_web_auth_${CONFIG_ENV}_${NODE_ENV}
+    build: ./
+    env_file: .env
+    tty: true
+    environment:
+      CHOKIDAR_USEPOLLING: "True"
+    volumes:
+      - node_modules:/web/node_modules
+      - ./src:/web/src
+      - ./public:/web/public
+      - ./build:/web/build
+      - ./package.json:/web/package.json
+      - ./yarn.lock:/web/yarn.lock
+      - ./ecosystem.json:/web/ecosystem.json
+    ports:
+      - 127.0.0.1:${EXPOSE_WEB_PORT}:${WEB_PORT}
+    restart: unless-stopped
+    stdin_open: true
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 4G
+
+volumes:
+  node_modules:
+
+networks:
+  default:
+    external:
+      name: pgp

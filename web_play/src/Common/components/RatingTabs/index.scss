@@ -1,0 +1,53 @@
+// #teams {
+//   display: none;
+// }
+
+.Rating {
+  /*  height: calc(100vh - 195px);
+  overflow: scroll;
+  overflow-x: hidden; */
+}
+
+.Rating__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: #332e59;
+  margin: 0;
+  padding: 0;
+  height: 38px;
+  font-size: 14px;
+  line-height: 17px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.Rating__tab {
+  position: relative;
+  padding: 12px 17px 15px 17px;
+  cursor: pointer;
+  top: 3px;
+  z-index: 2;
+}
+
+.Rating__tab--selected {
+  @extend .Rating__tab;
+  font-family: MontserratBold;
+  background-color: #2c254a;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  .RoundCornerWrapperBR {
+    opacity: 1;
+  }
+  .RoundCornerWrapperBL {
+    opacity: 1;
+  }
+}
+
+.Rating__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

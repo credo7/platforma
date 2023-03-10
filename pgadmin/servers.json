@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "pgp2",
+      "Group": "Servers",
+      "Port": 3132,
+      "Username": "pgp2",
+      "Host": "postgres",
+      "SSLMode": "prefer",
+      "MaintenanceDB": "pgp2"
+    }
+  }
+}
